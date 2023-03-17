@@ -14,7 +14,7 @@ resource "aws_instance" "my-machine" {
   count = 6
 
   tags = {
-   Name = "${element(var.instance_name,count.index)}"
+    Name = "${element(var.instance_name,count.index)}"
     OS = "Linux"
   }
 
