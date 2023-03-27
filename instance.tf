@@ -6,7 +6,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "my-machine" {
-  ami           = "ami-0d81306eddc614a45"
+  ami           = "ami-06e6b44dd2af20ed0"
   instance_type = "t2.micro"
   security_groups=["launch-wizard-2"]
   associate_public_ip_address = true
